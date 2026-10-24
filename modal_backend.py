@@ -396,7 +396,7 @@ def fastapi_app():
             if groq_api_key:
                 chat_llm = ChatGroq(
                     temperature=0.3,
-                    model="llama-3.3-70b-versatile",
+                    model="penai/gpt-oss-120b",
                     groq_api_key=groq_api_key
                 )
                 prompt = ChatPromptTemplate.from_template(
